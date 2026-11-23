@@ -1,0 +1,56 @@
+{
+  "config": {
+    "n_photons": 3,
+    "n_modes": 20,
+    "seed": 44,
+    "n_reservoir_features": 1540,
+    "pca_explained_variance": 0.9447099833938668,
+    "n_train": 6500,
+    "n_test": 7047
+  },
+  "timing_s": {
+    "reservoir": 0.8483140468597412,
+    "autoencoders": 41.948423624038696
+  },
+  "models": {
+    "Quantum classifier": {
+      "accuracy": 0.6534695615155385,
+      "balanced_accuracy": 0.697130837657524,
+      "f1_anomaly": 0.5720294426919033,
+      "roc_auc": 0.6788505065480602,
+      "normal_fpr": 0.009,
+      "recall_by_family": {
+        "dos": 0.9973333333333333,
+        "probe": 0.08733333333333333,
+        "r2l": 0.004020100502512563,
+        "u2r": 0.019230769230769232
+      }
+    },
+    "Quantum anomaly detector": {
+      "accuracy": 0.870583226905066,
+      "balanced_accuracy": 0.8804681245366939,
+      "f1_anomaly": 0.8784,
+      "roc_auc": 0.960942097026604,
+      "normal_fpr": 0.053,
+      "recall_by_family": {
+        "dos": 0.9613333333333334,
+        "probe": 0.9,
+        "r2l": 0.471356783919598,
+        "u2r": 0.6346153846153846
+      }
+    },
+    "Classical anomaly detector": {
+      "accuracy": 0.8531289910600255,
+      "balanced_accuracy": 0.8638918952310353,
+      "f1_anomaly": 0.8609057922322269,
+      "roc_auc": 0.9443663619141751,
+      "normal_fpr": 0.06366666666666666,
+      "recall_by_family": {
+        "dos": 0.9713333333333334,
+        "probe": 0.84,
+        "r2l": 0.45226130653266333,
+        "u2r": 0.6923076923076923
+      }
+    }
+  }
+}
